@@ -1,0 +1,99 @@
+/* Layout */
+header{
+  background: PowderBlue;
+  border: 1px solid #000080;
+  margin: auto;
+  padding: 10px;
+  height: 50px;
+  width: 800px;
+}
+
+nav{
+  background: SteelBlue;
+  border: 1px solid #000080;
+  margin: auto;
+  padding: 10px;
+  height: 20px;
+  width: 800px;  
+  line-height: 0em;
+}
+
+section{
+  background: #FFFFFF;
+  border: 1px solid #000080;
+  padding: 10px;
+  margin: auto;
+  height: 400px;
+  width: 800px;   
+}
+
+.boxleft {
+  float: left;
+  background: #FFFFFF;
+  height: 380px;
+  padding: 10px;
+  width: 560px;
+  line-height: 0em;
+}
+
+aside {
+  float: right;
+  background: WhiteSmoke;
+  border: 3px solid #000080;
+  height: 370px;
+  padding: 10px;
+  width: 180px;
+  line-height: 0em;
+}
+
+footer{
+  clear: both;
+  background: PowderBlue;
+  border: 1px solid #000080;
+  margin: auto;
+  padding: 10px;
+  height: 20px;
+  width: 800px;
+  line-height: 0em;
+}
+
+/*fonts*/
+
+@font-face {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-family: 'Carrois Gothic SC', sans-serif;
+    font-family: 'Iceland', cursive;
+}
+
+/* styles */
+
+  a:link    {color:#FF0000;} /* unvisited link */
+  a:visited {color:#00FF00;} /* visited link */
+  a:hover   {color:#FFFFFF;} /* mouse over link */
+  a:active  {color:#0000FF;} /* selected link */
+
+body{
+  font-size: 150%;
+  font: inherit;
+  background: LightGray;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #000066 ;
+    font-family: 'Alegreya Sans SC', Helvetica, Arial; 
+}
+
+p {
+    font-size: small; 
+    color: black; 
+    font-family: 'Carrois Gothic SC', Helvetica, Arial;
+}
+
+#nav_font{
+   font-size: large; 
+   font-family: 'Carrois Gothic SC', Helvetica, Arial;
+}
+
+#img_center{
+    margin:auto;
+}
