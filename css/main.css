@@ -25,6 +25,7 @@ section{
   margin: auto;
   height: 400px;
   width: 800px;   
+  overflow-y: auto;
 }
 
 .boxleft {
@@ -57,43 +58,3 @@ footer{
   line-height: 0em;
 }
 
-/*fonts*/
-
-@font-face {
-    font-family: 'Alegreya Sans SC', sans-serif;
-    font-family: 'Carrois Gothic SC', sans-serif;
-    font-family: 'Iceland', cursive;
-}
-
-/* styles */
-
-  a:link    {color:#FF0000;} /* unvisited link */
-  a:visited {color:#00FF00;} /* visited link */
-  a:hover   {color:#FFFFFF;} /* mouse over link */
-  a:active  {color:#0000FF;} /* selected link */
-
-body{
-  font-size: 150%;
-  font: inherit;
-  background: LightGray;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    color: #000066 ;
-    font-family: 'Alegreya Sans SC', Helvetica, Arial; 
-}
-
-p {
-    font-size: small; 
-    color: black; 
-    font-family: 'Carrois Gothic SC', Helvetica, Arial;
-}
-
-#nav_font{
-   font-size: large; 
-   font-family: 'Carrois Gothic SC', Helvetica, Arial;
-}
-
-#img_center{
-    margin:auto;
-}
