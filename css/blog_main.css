@@ -20,7 +20,7 @@ nav{
 
 
 .blog_nav{
-  background: #FFFFFF;
+  background: GhostWhite;
   border: 1px solid #000080;
   margin: auto;
   padding: 10px;
@@ -40,7 +40,7 @@ section{
 
 .blog_toc {
   float: left;
-  background: GhostWhite;
+  background: #FFFFFF;
   height: 400px;
   width: 230px;
   overflow-y: auto;
