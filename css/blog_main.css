@@ -18,33 +18,40 @@ nav{
   line-height: 0em;
 }
 
+
+.blog_nav{
+  background: GhostWhite;
+  border: 1px solid #000080;
+  margin: auto;
+  padding: 10px;
+  height: 20px;
+  width: 800px;  
+  line-height: 0em;
+}
+
 section{
   background: #FFFFFF;
   border: 1px solid #000080;
-  padding: 10px;
   margin: auto;
   height: 400px;
   width: 800px;   
+  padding: 10px;
+}
+
+.blog_toc {
+  float: left;
+  background: #FFFFFF;
+  height: 400px;
+  width: 230px;
   overflow-y: auto;
 }
 
-.boxleft {
+.blog_content {
   float: left;
   background: #FFFFFF;
-  height: 380px;
-  padding: 10px;
-  width: 560px;
-  line-height: 0em;
-}
-
-aside {
-  float: right;
-  background: WhiteSmoke;
-  border: 3px solid #000080;
-  height: 370px;
-  padding: 10px;
-  width: 180px;
-  line-height: 0em;
+  height: 400px;
+  width: 550px;
+  overflow-y: auto;
 }
 
 footer{
@@ -93,6 +100,10 @@ ul, li {
     font-size: small; 
     color: black; 
     font-family: 'Carrois Gothic SC', Helvetica, Arial;
+  a:link    {color:orange;} /* unvisited link */
+  a:visited {color:purple;} /* visited link */
+  a:hover   {color:red;} /* mouse over link */
+  a:active  {color:green;} /* selected link */
 }
 
 #font_question{
@@ -112,4 +123,12 @@ ul, li {
   margin-left: auto;
   margin-right: auto;
 }
+
+#blog_nav_font {
+    font-size: small; 
+    color: black; 
+    font-family: 'Carrois Gothic SC', Helvetica, Arial;
+    text-align: right;
+}
+
 
