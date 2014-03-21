@@ -40,7 +40,7 @@ section{
 
 .blog_toc {
   float: left;
-  background: #FFFFFF;
+  background: GhostWhite;
   height: 400px;
   width: 230px;
   overflow-y: auto;
