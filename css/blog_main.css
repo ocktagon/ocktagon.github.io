@@ -96,7 +96,7 @@ p {
     font-family: 'Carrois Gothic SC', Helvetica, Arial;
 }
 
-ul, li {
+ol, ul, li {
     font-size: small; 
     color: black; 
     font-family: 'Carrois Gothic SC', Helvetica, Arial;
@@ -106,22 +106,9 @@ ul, li {
   a:active  {color:green;} /* selected link */
 }
 
-#font_question{
-    font-size: medium; 
-    color: black; 
-    font-family: 'Iceland', Helvetica, Arial;
-    font-weight: bold;
-}
-
 #nav_font{
    font-size: large; 
    font-family: 'Carrois Gothic SC', Helvetica, Arial;
-}
-
-#img_center{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 #blog_nav_font {
@@ -131,4 +118,15 @@ ul, li {
     text-align: right;
 }
 
+#img_center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
+#font_question{
+    font-size: medium; 
+    color: black; 
+    font-family: 'Iceland', Helvetica, Arial;
+    font-weight: bold;
+}
