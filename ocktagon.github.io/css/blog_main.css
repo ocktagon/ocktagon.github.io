@@ -1,0 +1,132 @@
+/* Layout */
+header{
+  background: PowderBlue;
+  border: 1px solid #000080;
+  margin: auto;
+  padding: 10px;
+  height: 50px;
+  width: 800px;
+}
+
+nav{
+  background: SteelBlue;
+  border: 1px solid #000080;
+  margin: auto;
+  padding: 10px;
+  height: 20px;
+  width: 800px;  
+  line-height: 0em;
+}
+
+
+.blog_nav{
+  background: GhostWhite;
+  border: 1px solid #000080;
+  margin: auto;
+  padding: 10px;
+  height: 20px;
+  width: 800px;  
+  line-height: 0em;
+}
+
+section{
+  background: #FFFFFF;
+  border: 1px solid #000080;
+  margin: auto;
+  height: 400px;
+  width: 800px;   
+  padding: 10px;
+}
+
+.blog_toc {
+  float: left;
+  background: #FFFFFF;
+  height: 400px;
+  width: 230px;
+  overflow-y: auto;
+}
+
+.blog_content {
+  float: left;
+  background: #FFFFFF;
+  height: 400px;
+  width: 550px;
+  overflow-y: auto;
+}
+
+footer{
+  clear: both;
+  background: PowderBlue;
+  border: 1px solid #000080;
+  margin: auto;
+  padding: 10px;
+  height: 20px;
+  width: 800px;
+  line-height: 0em;
+}
+/*fonts*/
+
+@font-face {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-family: 'Carrois Gothic SC', sans-serif;
+    font-family: 'Iceland', cursive;
+}
+
+/* styles */
+
+  a:link    {color:orange;} /* unvisited link */
+  a:visited {color:purple;} /* visited link */
+  a:hover   {color:red;} /* mouse over link */
+  a:active  {color:green;} /* selected link */
+
+body{
+  font-size: 150%;
+  font: inherit;
+  background: LightGray;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #000066 ;
+    font-family: 'Alegreya Sans SC', Helvetica, Arial; 
+}
+
+p {
+    font-size: small; 
+    color: black; 
+    font-family: 'Carrois Gothic SC', Helvetica, Arial;
+}
+
+ol, ul, li {
+    font-size: small; 
+    color: black; 
+    font-family: 'Carrois Gothic SC', Helvetica, Arial;
+  a:link    {color:orange;} /* unvisited link */
+  a:visited {color:purple;} /* visited link */
+  a:hover   {color:red;} /* mouse over link */
+  a:active  {color:green;} /* selected link */
+}
+
+#nav_font{
+   font-size: large; 
+   font-family: 'Carrois Gothic SC', Helvetica, Arial;
+}
+
+#blog_nav_font {
+    font-size: small; 
+    color: black; 
+    font-family: 'Carrois Gothic SC', Helvetica, Arial;
+    text-align: right;
+}
+
+#img_center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#font_question{
+    font-size: medium; 
+    color: black; 
+    font-family: 'Iceland', Helvetica, Arial;
+    font-weight: bold;
+}
