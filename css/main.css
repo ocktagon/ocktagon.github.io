@@ -1,60 +1,60 @@
 /* Layout */
 header{
   background: PowderBlue;
-  border: 1px solid #000080;
+  border: 0.0625em solid #000080;
   margin: auto;
-  padding: 10px;
-  height: 50px;
-  width: 800px;
+  padding: 0.625em;
+  height: 3.125em;
+  width: 50em;
 }
 
 nav{
   background: SteelBlue;
-  border: 1px solid #000080;
+  border: 0.0625em solid #000080;
   margin: auto;
-  padding: 10px;
-  height: 20px;
-  width: 800px;  
+  padding: 0.625em;
+  height: 1.25em;
+  width: 50em;  
   line-height: 0em;
 }
 
 section{
   background: #FFFFFF;
-  border: 1px solid #000080;
-  padding: 10px;
+  border: 0.0625em solid #000080;
+  padding: 0.625em;
   margin: auto;
-  height: 400px;
-  width: 800px;   
+  height: 27.625em;
+  width: 50em;   
   overflow-y: auto;
 }
 
 .boxleft {
   float: left;
   background: #FFFFFF;
-  height: 380px;
-  padding: 10px;
-  width: 560px;
+  height: 26.375em;
+  padding: 0.625em;
+  width: 35em;
   line-height: 0em;
 }
 
 aside {
   float: right;
   background: WhiteSmoke;
-  border: 3px solid #000080;
-  height: 370px;
-  padding: 10px;
-  width: 180px;
+  border: 0.1875em solid #000080;
+  height: 26.125em;
+  padding: 0.625em;
+  width: 11.25em;
   line-height: 0em;
 }
 
 footer{
   clear: both;
   background: PowderBlue;
-  border: 1px solid #000080;
+  border: 0.0625em solid #000080;
   margin: auto;
-  padding: 10px;
-  height: 20px;
-  width: 800px;
+  padding: 0.625em;
+  height: 1.25em;
+  width: 50em;
   line-height: 0em;
 }
 /*fonts*/

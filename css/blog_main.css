@@ -1,56 +1,60 @@
 /* Layout */
 header{
   background: PowderBlue;
-  border: 1px solid #000080;
+  border: 0.0625em solid #000080;
   margin: auto;
-  padding: 10px;
-  height: 50px;
-  width: 800px;
+  padding: 0.625em;
+  height: 3.125em;
+  width: 50em;
 }
 
 nav{
   background: SteelBlue;
-  border: 1px solid #000080;
+  border: 0.0625em solid #000080;
   margin: auto;
-  padding: 10px;
-  height: 20px;
-  width: 800px;  
+  padding: 0.625em;
+  height: 1.25em;
+  width: 50em;  
   line-height: 0em;
 }
 
 
 .blog_nav{
   background: GhostWhite;
-  border: 1px solid #000080;
+  border: 0.0625em solid #000080;
   margin: auto;
-  padding: 10px;
-  height: 20px;
-  width: 800px;  
+  padding: 0.625em;
+  height: 1.25em;
+  width: 50em;  
   line-height: 0em;
 }
 
 section{
   background: #FFFFFF;
-  border: 1px solid #000080;
+  border: 0.0625em solid #000080;
   margin: auto;
-  height: 400px;
-  width: 800px;   
-  padding: 10px;
+  height: 25em;
+  width: 50em;   
+padding: 0.625em;
+
 }
 
 .blog_toc {
   float: left;
   background: #FFFFFF;
-  height: 400px;
-  width: 230px;
+  height: 25em;
+  width: 14.375em;
   overflow-y: auto;
+
 }
 
 .blog_content {
   float: left;
   background: #FFFFFF;
-  height: 400px;
-  width: 550px;
+  height: 25em;
+  width: 35em;
+  padding-left:0.625em;
+
   overflow-y: auto;
 }
 
@@ -59,9 +63,9 @@ footer{
   background: PowderBlue;
   border: 1px solid #000080;
   margin: auto;
-  padding: 10px;
-  height: 20px;
-  width: 800px;
+  padding: 0.625em;
+  height: 1.25em;
+  width: 50em;
   line-height: 0em;
 }
 /*fonts*/
