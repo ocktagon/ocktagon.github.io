@@ -25,15 +25,51 @@
 <section>
 <div class="blog_toc">
 <p>
-<a href="blog_main.html#blogpost-5">Mar 29, 2014: <br />U1/Wk3 Culture of Pair Programming</a> <br /> <br />
-<a href="blog_main.html#blogpost-4">Mar 28, 2014: <br />U1/Wk3 JavaScript vs. Ruby</a> <br /> <br />
-<a href="blog_main.html#blogpost-3">Mar 20, 2014: <br />U1/Wk2 Culture Exercise #1</a> <br /> <br />
+<a href="blog_main.html#blogpost-7">Apr 6, 2014: <br />Culture: Conflict Exercise</a> <br /> <br />
+<a href="blog_main.html#blogpost-6">Apr 5, 2014: <br />Enumerable Methods in Ruby</a> <br /> <br />
+<a href="blog_main.html#blogpost-5">Mar 29, 2014: <br />Culture: Pair Programming</a> <br /> <br />
+<a href="blog_main.html#blogpost-4">Mar 28, 2014: <br />JavaScript vs. Ruby</a> <br /> <br />
+<a href="blog_main.html#blogpost-3">Mar 20, 2014: <br />Culture: Exercise #1</a> <br /> <br />
 <a href="blog_main.html#blogpost-2">Mar 20, 2014: <br />JavaScript's Popularity</a> <br /> <br />
 <a href="blog_main.html#blogpost-1">Mar 16, 2014: <br />Comparing Websites</a>
 </p>
 </ul>
 </div>
 <div class="blog_content">
+
+<article id="blogpost-7">
+<h3>Culture: Dealing with Conflict Exercise</h3>
+<h5>Apr 6th, 2014</h5>
+
+<div id="font_question"> 
+Discuss a time you had an emotional conflict with someone. What was it about? What happened?
+</div>
+<p>
+Whether it be in a team setting or buyer/seller relationship, there are many situations that can be interpreted as 'conflict'.  In any time there is a transaction between two or more parties, a difference in opinion may occur.  In those situations, when one feels threatened or compromised, I think it's easy for things to turn into a conflict.  </p>
+<p>
+Without going into specifics, as long as people interact with each other there will always be some sort of conflict.  My view is that to conflict is a conscious choice, and we can make better choices to avoid it altogether.  In the cases where it cannot be avoided, both parties need to make effort to clearly articulate their position and the conflict should not turn into a one-sided attack. 
+</p>
+<p>
+The trap I have fallen into a few times is when a conflict is already in progress, I tend to just give in to the other party in situations where fighting back is not worth my time and effort.  As a result, I can end up compromising more often.  In general, this approach has worked in the long term - if it is a good relationship, I can ask the other party to make concessions on another day in the future, if I compromise on something today.  However, it is frustrating that there are certain personalities out there that will take advantage and try to 'win' in every conflict.  I choose not to conflict at all with that category, although I do sometimes think it would be a better world if those type of personalities lost in their conflicts more often.   
+</p>
+<hr />
+</article>
+
+<article id="blogpost-6">
+<h3>Enumerable Methods in Ruby</h3>
+<h5>Apr 5th, 2014</h5>
+<p>
+Dealing with arrays is a common task in programming, and taking a moment to talk about Enumerables.  </p>
+<p>In Ruby, Enumerable provides many instance methods to help in making manipulating arrays less cumbersome.  For a good way to look up what kind of methods there are, the command <font style="background:skyblue; color:blue">Enumerable.instance_methods.sort</font> works like a charm.  This is a great place to start when dealing with an unfamiliar set of methods: </p>
+<img src = "img/enum_methods.png" />
+<p>
+Of the many Enumerable methods available, I find that <font style="background:skyblue; color:blue">Enumerable#map</font> is really useful as it allows for alteration of each element in array in one relatively easy-to-read command.  The example below shows how an array or integers or strings can be altered with map.  The method can apply a modification to each element in an array and return the result, which can be very powerful to manage big data collections.  
+<img src = "img/enum_map_example.png" /> 
+<p>The map method can also be used for a destructive operation to alter the original input array.  This is done by adding a "!", so by using ".map!" instead of "map".  </p>
+
+</p>
+<hr />
+</article>
 
 <article id="blogpost-5">
 <h3>Culture of Pair Programming </h3>
