@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Aki's DBC Blog - Enumerable Methods in Ruby</title>
+        <link rel="stylesheet" href="../css/blog_main.css">
+        <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Carrois+Gothic+SC|Audiowide|Iceland' rel='stylesheet' type='text/css'>
+    </head>
+<body>
+
+<div class="blog_content">
+
+<article>
+<h3>Enumerable Methods in Ruby</h3>
+<h5>Apr 5th, 2014</h5>
+<p>
+Dealing with arrays is a common task in programming, and taking a moment to talk about Enumerables.  </p>
+<p>In Ruby, Enumerable provides many instance methods to help in making manipulating arrays less cumbersome.  For a good way to look up what kind of methods there are, the command <font style="background:skyblue; color:blue">Enumerable.instance_methods.sort</font> works like a charm.  This is a great place to start when dealing with an unfamiliar set of methods: </p>
+<img src = "../img/enum_methods.png" />
+<p>
+Of the many Enumerable methods available, I find that <font style="background:skyblue; color:blue">Enumerable#map</font> is really useful as it allows for alteration of each element in array in one relatively easy-to-read command.  The example below shows how an array or integers or strings can be altered with map.  The method can apply a modification to each element in an array and return the result, which can be very powerful to manage big data collections.  
+<img src = "../img/enum_map_example.png" /> 
+<p>The map method can also be used for a destructive operation to alter the original input array.  This is done by adding a "!", so by using ".map!" instead of "map".  </p>
+
+</p>
+<hr />
+</article>
+
+</div>
+</body>
+</html>
