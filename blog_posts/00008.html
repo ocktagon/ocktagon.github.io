@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Aki's DBC Blog - Defining and Instantiating a Class in Ruby</title>
+        <link rel="stylesheet" href="../css/blog_main.css">
+        <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Carrois+Gothic+SC|Audiowide|Iceland' rel='stylesheet' type='text/css'>
+    </head>
+<body>
+
+<div class="blog_content">
+
+<article id="blogpost-8">
+<h3>Defining and Instantiating a Class in Ruby</h3>
+<h5>Apr 12th, 2014</h5>
+<p>
+Phase0 / Week 5 of Dev Bootcamp was a great week.  Went through Ruby Class basics, and got my hands on The Well-Grounded Rubyist book.
+</p>
+<p>
+For those not familiar with Ruby or programming, In a <a href ="http://ocktagon.github.io/blog_posts/00004.html" target="blog_canvas">previous posting</a> I briefly compared Ruby Classes/JavaScript constructor methods and how they act as blueprint templates; and that variables and methods can be defined within them. Today I'd like to go into part two of that post, and discuss this specifically in the scope of Ruby. 
+</p>
+<p>
+So to start up, here's the not-so-easy to follow narrative (bear with me for a moment).  </p>
+<p> <strong>Classes</strong> in Ruby are first-class objects - each is an instance of the class Class. When a new class is defined, an object of type Class is created and assigned to a constant("Name" for example). When Name.new is called to create a new object, the new class method in Class is run by default, which in turn invokes allocate to allocate memory for the object, before finally calling the new object's initialize method. The construction is done via the new class method, the initialization is done via the initialize instance method.  
+</p>
+<p>
+Okay, now that I've prefaced this post with the most hard-to-follow narrative (yep, I didn't understand it at first either), I've written below a real example of a sample class, which I find makes this notion of Class much easier to comprehend: 
+</p>
+<img src="../img/Ruby_Dieclass.png" />
+<p>
+In the example above, I am defining a simple class that simulates rolling a die with variable number of sides.  Describing this in pseudo-code: </p>
+<ol>
+<li>Defined a class and named it Die</li>
+<li>I made Die able to accept one variable called sides.  If the number of sides is not a positive number, it raises an error at initalization, otherwise it initializes and creates the instance variable @sides</li>
+<li>Created an instance method called <strong>sides</strong>.  It's a simple method that just returns the number of sides.</li>
+<li>Created an instance method called <strong>roll</strong>.  This returns a random number between 1 and the number of sides defined when Die was initalized.</li>
+</ol>
+<p>
+So going line-by-line, it's actually not as hard as it sounds.  To create a template object, define it as a class and give it a name (in this case, Die).  Keep in mind that a class needs to lead with a capital letter since it's so blueprint-special!  Then some variables to be used need to be initialized (in this case, number of sides).  Then create some methods that may (or may not, up to you!) use the initialized variables (methods sides and roll).  
+</p>
+<p>
+Once this code has been created, this class can be called as you like by doing something like: <br />
+<strong>mycooldie = Die.new(6)</strong><br />
+This creates a new instance of Die called mycooldie with 6 sides initiated.<br />
+<strong>mycooldie.sides</strong><br />
+This looks up how many sides there are for mycooldie, as we all forget sometimes!<br />
+<strong>mycooldie.roll</strong><br />
+This simulates a dice roll and returns a random number between 1 and the number of sides of the die.
+</p>
+<p>
+And there you have it.  How to create a blueprint class with some methods, and then instantiate (I can't believe that's a real word) it in Ruby.  Very classy!
+</p>
+
+
+<hr />
+</article>
+</div>
+</body>
+</html>
