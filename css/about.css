@@ -18,49 +18,31 @@ nav{
   line-height: 0em;
 }
 
-
-.blog_nav{
-  background: GhostWhite;
-  border: 0.0625em solid #000080;
-  margin: auto;
-  padding: 0.625em;
-  height: 1.25em;
-  width: 50em;  
-  line-height: 0em;
-}
-
 section{
   background: #FFFFFF;
   border: 0.0625em solid #000080;
+  padding: 0.625em;
+  margin: auto;
+  height: 27.625em;
+  width: 50em;   
+  overflow-y: auto;
+}
+
+.resumebox{
+  background: #FFFFFF;
   margin: auto;
   height: 25em;
-  width: 50em;   
-padding: 0.625em;
-
-}
-
-.blog_toc {
-  float: left;
-  background: #FFFFFF;
-  height: 25em;
-  width: 14.375em;
-  overflow-y: auto;
-
-}
-
-.blog_content {
-  float: right;
-  background: #FFFFFF;
-  height: 25em;
-  width: 34.375em;
+  width: 42em;
   padding-left:0.625em;
-  overflow-y: auto;
+  padding-right:0.625em;
+  overflow-y: auto;  
 }
+
 
 footer{
   clear: both;
   background: PowderBlue;
-  border: 1px solid #000080;
+  border: 0.0625em solid #000080;
   margin: auto;
   padding: 0.625em;
   height: 1.25em;
@@ -95,7 +77,13 @@ h1 {
   line-height: 0.5em;
 }
 
-h2, h3, h4, h5, h6 {
+h2, h3 {
+    text-align: center;
+    color: #000066 ;
+    font-family: 'Alegreya Sans SC', Helvetica, Arial; 
+}
+
+h4, h5, h6 {
     color: #000066 ;
     font-family: 'Alegreya Sans SC', Helvetica, Arial; 
 }
@@ -106,26 +94,15 @@ p {
     font-family: 'Carrois Gothic SC', Helvetica, Arial;
 }
 
-ol, ul, li {
+ul, li {
     font-size: small; 
     color: black; 
     font-family: 'Carrois Gothic SC', Helvetica, Arial;
-  a:link    {color:orange;} /* unvisited link */
-  a:visited {color:purple;} /* visited link */
-  a:hover   {color:red;} /* mouse over link */
-  a:active  {color:green;} /* selected link */
 }
 
 #nav_font{
    font-size: large; 
    font-family: 'Carrois Gothic SC', Helvetica, Arial;
-}
-
-#blog_nav_font {
-    font-size: small; 
-    color: black; 
-    font-family: 'Carrois Gothic SC', Helvetica, Arial;
-    text-align: right;
 }
 
 #img_center{
@@ -134,17 +111,5 @@ ol, ul, li {
   margin-right: auto;
 }
 
-#font_question{
-    font-size: medium; 
-    color: black; 
-    font-family: 'Iceland', Helvetica, Arial;
-    font-weight: bold;
-}
 
-#font_codesnip{
-  font-size: small;
-  color: orange; 
-  background: black;
-  font-family: 'Alegreya+Sans+SC', Helvetica, Arial;
-  font-weight: bold;
-}
+

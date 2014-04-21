@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Aki's DBC Blog - Functional Programming and OOP</title>
+        <link rel="stylesheet" href="../css/blog_main.css">
+        <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Carrois+Gothic+SC|Audiowide|Iceland' rel='stylesheet' type='text/css'>
+    </head>
+<body>
+
+<div class="blog_content">
+
+<article>
+<h3>Functional Programming and OOP</h3>
+<h5>April 20th, 2014</h5>
+<p> 
+If you are learning programming, you probably have more or less heard about the programming schools of thought for Functional vs. Object Oriented styles.</p>
+<p>  
+Functional programming is a coding style that emphasizes functions to produce results that depend only on their inputs and not on the program state (i.e. think calculator math). True functional programming does not change program 'state', or in other words makes the output mutable when run multiple times, although the input may remain the same.  Because of this, it is much easier to understand and predict the behavior of a program. Functional programming is a form of declarative programming.   </p>
+<p>
+In contrast, object-oriented programming (OOP) was designed to support imperative (procedural) programming.  Typical OOP tends to emphasize change of state in objects, imposes coupling between layers hindering modularization, and mixes the concepts of identity and state.  What this means is that OOP code  can tend to be less reusable than FP code.  </p>
+
+<p>Programming languages out there have differences in supporting one style more than the other, but in general it can be assumed that both style paradigms can be supported.  For example, although Ruby is generally used as an OOP language, one can still take a functional approach when using it.  </p>
+<p>
+Functional Programming Benefits: 
+<ul>
+<li>Cleaner code - variables are not modified after defined, making code easier to follow </li>
+<li>Referential transparency - if a function is called with the same parameters, it is certain that the output will always be the same (there is no state that would change it). </li>
+<li>
+Modularization - the program is more modular, thus promoting bottom-up programming.</li>
+<li>Ease of test/debugging - Functions are isolated with transparency of input vs output, so it is easier to test and debug.
+</li>
+</ul>
+</p>
+<p>
+Here are some best practices for functional programming with examples.  This is by no means an exhaustive list of best practices.  However, a common theme/rule of thumb that I have find useful to remember is that it's better to NOT be destructive and NOT reuse existing variables.   
+</p>
+<ol>
+<li>Don't update variables, just create new ones</li><br />
+<li>Don't append to arrays or strings or update hashes</li><br />
+Instead of doing this: <br />
+<div id="font_codesnip">
+array = [1,2,3]<br />
+array.push(4)<br />
+# array = [1,2,3,4] as a result <br />
+</div>
+Do this: <br />
+<div id="font_codesnip">
+array = [1,2,3]<br />
+n_array = array + [4] <br />
+</div>
+<br />
+OR in the scenario of altering a hash, instead of doing this:
+<div id="font_codesnip">
+hash = {:a => 1, :b => 2} <br />
+hash[:c] = 3 <br />
+# hash = {:a => 1, b => 2, :c => 3}
+</div>
+Do this: 
+<div id="font_codesnip">
+hash = {:a => 1, :b => 2} <br />
+new_hash = hash.merge(:c => 3) <br />
+</div>
+<br /><br />
+<li>Avoid destructive bang(!) methods</li>
+<br />
+<li>Don't reuse variables</li>
+Bad: 
+<div id="font_codesnip">
+celsius = "100" <br />
+celsius = celsius.to_i <br />
+</div>
+Good: 
+<div id="font_codesnip">
+celsius_string = "100"
+celsius = celsius_string.to_i
+</div>
+</ol>
+<p>
+To sum up, the functional programming approach provides quite a few benefits.  You can express more with less compact code, the code is more reusable due from being able to abstract and reduce complexity of generic patterns, and it is more declarative and easier to follow than OOP.  When coding in Ruby, it's good to be aware of these benefits and wisely choose when to take an FP approach versus a classic OOP approach.  
+
+</p>
+<hr />
+</article>
+
+</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-49856569-1', 'ocktagon.github.io');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>

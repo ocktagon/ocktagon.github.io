@@ -28,6 +28,16 @@ section{
   overflow-y: auto;
 }
 
+.projectsbox{
+  background: #FFFFFF;
+  margin: auto;
+  height: 25em;
+  width: 42em;
+  padding-left:0.625em;
+  padding-right:0.625em;
+  overflow-y: auto;  
+}
+
 .boxleft {
   float: left;
   background: #FFFFFF;
