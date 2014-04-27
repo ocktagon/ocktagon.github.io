@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Aki's DBC Blog - SQL Tuning/Optimization</title>
+        <link rel="stylesheet" href="../css/blog_main.css">
+        <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Carrois+Gothic+SC|Audiowide|Iceland' rel='stylesheet' type='text/css'>
+    </head>
+<body>
+
+<div class="blog_content">
+
+<article>
+<h3>Optimizing SQL Queries</h3>
+<h5>April 26th, 2014</h5>
+<p>
+This week's DBC projects focused on how to use SQL and design database schemas.  Since this was the focus, I figure I write a little bit about SQL query tuning/optimization.  
+</p>
+<p>
+So any newbie developer will design databases and query them at one point or another.  The big question here is what can be done to be more performant, or in other words, how can you tune your SQL statements to be able to quickly get the information you're looking for?  This is really important when manipulating large sets of data. Below, I've made some excerpts for a few good tricks, but before we dive in... 
+</p>
+<p>Some SQL best practices to keep your statements aesthetically clean:</h5>
+<ul>
+<li>Use single case for all SQL verbs (i.e. SELECT, FROM)</li>
+<li>Begin all SQL verbs on a new line</li>
+<li>Separate all words with a single space </li>
+<li>Right or left align verbs within the initial SQL verb</li>
+</ul>
+</p>
+
+<p>
+Ok, now that's out of the way, here are some good tips and tricks to tune your SQL statements. 
+<h4>1. Specific is always better</h4>
+<p>Instead of doing this:
+<div id="font_codesnip">
+SELECT * FROM users; <br />
+</div>
+<p>Do this:
+<div id="font_codesnip">
+SELECT id, first_name, last_name FROM users;
+</div>
+</p>
+<br />
+
+<h4>2. Use HAVING sparingly to filter only after you've selected your data set</h4>
+<p>Bad:
+<div id="font_codesnip">
+SELECT hobby, count(hobby) <br />
+FROM users <br />
+GROUP BY hobby <br />
+HAVING hobby!= 'Baseball' AND subject!= 'Tennis'; <br />
+</div>
+<p>Good:
+<div id="font_codesnip">
+SELECT hobby, count(hobby) <br />
+FROM users <br />
+WHERE hobby != 'Baseball' <br />
+AND subject != 'Tennis' <br />
+GROUP BY hobby;<br />
+</div>
+</p>
+<h4>3. Minimize the number of subquery blocks </h4>
+<p>Bad:
+<div id="font_codesnip">
+SELECT name <br />
+FROM employee <br />
+WHERE salary = (SELECT MAX(salary) FROM employee_details)  <br />
+AND age = (SELECT MAX(age) FROM employee_details)  <br />
+AND dept = 'Electronics'; <br />
+</div>
+<p>Good:
+<div id="font_codesnip">
+SELECT name <br />
+FROM employee <br />
+WHERE (salary, age ) = (SELECT MAX (salary), MAX (age) FROM employee_details) <br />
+AND dept = 'Electronics'; <br />
+</div>
+</p>
+<br />
+<h4>4. Avoid using conditions in the WHERE clause</h4>
+<p>Bad:
+<div id="font_codesnip">
+SELECT id, first_name, age <br />
+FROM student_details WHERE age != 10;<br />
+</div>
+<p>Good:
+<div id="font_codesnip">
+SELECT id, first_name, age <br />
+FROM student_details WHERE age > 10; <br />
+</div>
+</p>
+<br />
+
+<h4>5. Store large binary objects in a file system, and add the file path in the database.</h4>
+<p>
+In summary, the tricks above are not by any means meant to be an all-inclusive list, but this is a great place to get started when thinking about creating a foundation for more performant SQL querying.  
+</p>
+
+</ol>
+
+<hr />
+</article>
+
+</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-49856569-1', 'ocktagon.github.io');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>
