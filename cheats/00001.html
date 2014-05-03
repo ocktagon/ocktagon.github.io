@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Aki's World::Knowledge Library</title>
+        <link rel="stylesheet" href="../css/library.css">
+        <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Carrois+Gothic+SC|Audiowide|Iceland' rel='stylesheet' type='text/css'>
+    </head>
+<body>
+
+<div class="content">
+<div class="cheatbox">
+<center><h2>Cheat Sheet #1: Git Commands</h2></center>
+<div class="cheatsheet">
+<h4>CREATE</h4>
+<strong>Clone an existing repository</strong>
+<p>$ git clone &lt;url&gt;</p>
+<strong>Create a new local repository</strong>
+<p>$ git init</p>
+
+<h4>LOCAL CHANGES</h4>
+<strong>Changed files in working directory</strong>
+<p>$ git status</p>
+<strong>Changed to tracked files</strong>
+<p>$ git diff</p>
+<strong>Add all current changes to the next commit</strong>
+<p>$ git add .</p>
+<strong>Add some changes in (file) to the next commit</strong>
+<p>$ git add -p &lt;file&gt;</p>
+<strong>Commit all local changes in tracked files</strong>
+<p>$ git commit -a</p>
+<strong>Commit previously staged changes</strong>
+<p>$ git commit</p>
+<strong>Change the last commit</strong>
+<p>$ git commit --amend</p>
+
+<h4>COMMIT HISTORY</h4>
+<strong>Show all commits, starting with the newest</strong>
+<p>$ git log</p>
+<strong>Show changes over time for a specific file</strong>
+<p>$ git log -p &lt;file&gt;</p>
+<strong>Who changed what and when in &lt;file&gt;</strong>
+<p>$ git blame &lt;file&gt;</p>
+
+<h4>BRANCHES &amp TAGS</h4>
+<strong>List all existing branches</strong>
+<p>$ git branch</p>
+<strong>Switch HEAD branch</strong>
+<p>$ git checkout &lt;branch&gt;</p>
+<strong>Create a new branch based on your current HEAD</strong>
+<p>$ git branch &lt;new-branch&gt;</p>
+<strong>Creat a new tracking branch based on a remote branch</strong>
+<p>$ git branch --track &lt;new-branch&gt; &lt;remote-branch&gt;</p>
+<strong>Delete a local branch</strong>
+<p>$ git branch -d &lt;branch&gt;</p>
+<strong>Mark the current commit with a tag</strong>
+<p>$ git tag &lt;tag-name&gt;</p>
+
+<h4>UPDATE &amp PUBLISH</h4>
+<strong>List all currently configured remotes</strong>
+<p>$ git remote -v</p>
+<strong>Show information about a remote</strong>
+<p>$ git remote show &lt;remote&gt;</p>
+<strong>Add new remote repository, named &lt;remote&gt;</strong>
+<p>$ git remote add &lt;remote&gt; &lt;url&gt;</p>
+<strong>Download all changes from &lt;remote&gt;, but don't integrate into HEAD</strong>
+<p>$ git fetch &lt;remote&gt;</p>
+<strong>Download changes and directly merge/integrate into HEAD</strong>
+<p>$ git pull &lt;remote&gt; &lt;branch&gt;</p>
+<strong>Publish local changes on a remote</strong>
+<p>$ git push &lt;remote&gt; &lt;branch&gt;</p>
+<strong>Delete a branch on the remote</strong>
+<p>$ git push &lt;remote&gt; :&lt;branch&gt;</p>
+<strong>Publish your tags</strong>
+<p>$ git push --tags</p>
+
+
+<h4>MERGE &amp RELEASE</h4>
+<strong>Merge &lt;branch&gt; into your current HEAD</strong>
+<p>$ git merge &lt;branch&gt;</p>
+<strong>Rebase your current HEAD onto &lt;branch&gt;</strong>
+<p>$ git rebase &lt;branch&gt;</p>
+<strong>Abort a rebase</strong>
+<p>$ git rebase --abort</p>
+<strong>Continue a rebase after resolving conflicts</strong>
+<p>$ git rebase --continue</p>
+<strong>Use your configured merge tool to solve conflicts</strong>
+<p>$ git mergetool</p>
+<strong>Use your editor to manually solve conflicts and (after resolving) mark file as resolved</strong>
+<p>$ git add &lt;resolved-file&gt;</p>
+<p>$ git rm &lt;resolved-file&gt;</p>
+
+
+<h4>UNDO</h4>
+<strong>Discard all local changes in your working directory</strong>
+<p>$ git reset --hard HEAD</p>
+<strong>Discard local changes in a specific file</strong>
+<p>$ git checkout HEAD &lt;file&gt;</p>
+<strong>Revert a commit (by producing a new commit with contrary changes)</strong>
+<p>$ git revert &lt;commit&gt;</p>
+<strong>Reset your HEAD pointer to a previous commit ...and discard all changes since then</strong>
+<p>$ git reset --hard &lt;commit&gt;</p>
+<strong>...and preserve all changes as unstaged changes</strong>
+<p>$ git git reset &lt;commit&gt;</p>
+<strong>...and preserve uncommitted lcoal changes</strong>
+<p>$ git reset --keep &lt;commit&gt;</p>
+
+<h4>GETTING HELP &amp DOCUMENTATION</h4>
+<strong>Get help on the command line</strong>
+<p>$ git help &lt;command&gt;</p>
+
+<h4>BEST PRACTICES</h4>
+<strong>
+<ul>
+<li>Commit related changes with small commits</li>
+<li>Test code before commit</li>
+<li>Use branches</li>
+<li>Commit often</li>
+<li>Write good commit messages</li>
+<li>Test code before commit</li>
+<li>Don't commit half-done work</li>
+<li>Write good commit messages</li>
+<li>Use branches</li>
+<li>Agree on a common workflow</li>
+<li>Version control is not a backup system</li>
+<ul>  
+</strong>
+
+
+</div>
+</div>
+
+
+</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-49856569-1', 'ocktagon.github.io');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>

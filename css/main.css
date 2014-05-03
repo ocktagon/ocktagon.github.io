@@ -35,26 +35,17 @@ section{
   width: 42em;
   padding-left:0.625em;
   padding-right:0.625em;
-  overflow-y: auto;  
 }
 
-.boxleft {
-  float: left;
-  background: #FFFFFF;
-  height: 26.375em;
-  padding: 0.625em;
-  width: 35em;
-  line-height: 0em;
-}
-
-aside {
-  float: right;
-  background: WhiteSmoke;
+.newsbox{
+  background: AliceBlue;
+  margin: auto;
+  height: 27em;
+  width: 42em;
+  padding-left:0.625em;
+  padding-right:0.625em;
   border: 0.1875em solid #000080;
-  height: 26.125em;
-  padding: 0.625em;
-  width: 11.25em;
-  line-height: 0em;
+  line-height: 1em;
 }
 
 footer{
@@ -130,3 +121,28 @@ ul, li {
   font-weight: 900
 }
 
+.cheatsheet h4 {
+  font-size: large;
+  color: white; 
+  background: navy;
+  font-family: 'Alegreya Sans SC', Helvetica, Arial;
+  font-weight: bold;
+  text-indent:0.5em;
+  line-height: 1.5em
+}
+
+.cheatsheet p {
+  font-size: medium;
+  color: navy; 
+  background: LightSkyBlue;
+  font-family: 'Iceland', Helvetica, Arial;
+  font-weight: bold;
+  text-indent:0.5em;
+}
+
+.cheatsheet strong {
+  font-size: medium;
+  color: black; 
+  font-family: 'Carrois Gothic SC', Helvetica, Arial;
+  text-indent:0.5em;
+}

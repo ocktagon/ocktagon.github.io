@@ -21,28 +21,46 @@ nav{
 section{
   background: #FFFFFF;
   border: 0.0625em solid #000080;
-  padding: 0.625em;
   margin: auto;
   height: 27.625em;
   width: 50em;   
+padding: 0.625em;
+
+}
+
+.toc {
+  float: left;
+  background: #FFFFFF;
+  height: 26em;
+  width: 14em;
+  overflow-y: auto;
+
+}
+
+.content {
+  float: right;
+  background: #FFFFFF;
+  height: 27.625em;
+  width: 34.375em;
   overflow-y: auto;
 }
 
-.resumebox{
-  background: #FFFFFF;
+.cheatbox{
   margin: auto;
-  height: 25em;
-  width: 42em;
+  height: 27.625em;
+  width: 32em;
   padding-left:0.625em;
   padding-right:0.625em;
-  overflow-y: auto;  
+  background: WhiteSmoke;
+  border: 0.1em solid #000080;
+  line-height: 1em;
+  overflow-y:auto;
 }
-
 
 footer{
   clear: both;
   background: PowderBlue;
-  border: 0.0625em solid #000080;
+  border: 1px solid #000080;
   margin: auto;
   padding: 0.625em;
   height: 1.25em;
@@ -77,13 +95,7 @@ h1 {
   line-height: 0.5em;
 }
 
-h2, h3 {
-    text-align: center;
-    color: #000066 ;
-    font-family: 'Alegreya Sans SC', Helvetica, Arial; 
-}
-
-h4, h5, h6 {
+h2, h3, h4, h5, h6 {
     color: #000066 ;
     font-family: 'Alegreya Sans SC', Helvetica, Arial; 
 }
@@ -94,10 +106,14 @@ p {
     font-family: 'Carrois Gothic SC', Helvetica, Arial;
 }
 
-ul, li {
+ol, ul, li {
     font-size: small; 
     color: black; 
     font-family: 'Carrois Gothic SC', Helvetica, Arial;
+  a:link    {color:orange;} /* unvisited link */
+  a:visited {color:purple;} /* visited link */
+  a:hover   {color:red;} /* mouse over link */
+  a:active  {color:green;} /* selected link */
 }
 
 #nav_font{
@@ -105,17 +121,36 @@ ul, li {
    font-family: 'Carrois Gothic SC', Helvetica, Arial;
 }
 
+
 #img_center{
-  text-align: center;
-  position: relative;
-  display: inline-block;
+  display: block;
   margin-left: auto;
   margin-right: auto;
-  padding-left:0.625em;
-  padding-right:0.625em;
-
-}
 }
 
 
+.cheatsheet h4 {
+  font-size: large;
+  color: white; 
+  background: navy;
+  font-family: 'Alegreya Sans SC', Helvetica, Arial;
+  font-weight: bold;
+  text-indent:0.5em;
+  line-height: 1.5em
+}
 
+.cheatsheet p {
+  font-size: medium;
+  color: navy; 
+  background: LightSkyBlue;
+  font-family: 'Iceland', Helvetica, Arial;
+  font-weight: bold;
+  text-indent:0.5em;
+}
+
+.cheatsheet strong {
+  font-size: small;
+  color: black; 
+  font-family: 'Carrois Gothic SC', Helvetica, Arial;
+  text-indent:0.5em;
+}
